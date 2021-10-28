@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAJAA</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+
+      :root {
+        --blue: rgb(70, 173, 233);
+        --light_blue: rgb(176, 209, 228);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      @media (max-width: 600px) {
+        .head {
+          width: 100%;
+          height: auto;
+          padding: 10px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .head img {
+          width: 40px;
+          border-radius: 50%;
+        }
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 10px;
+        }
+        .category {
+          color: white;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+          padding: 20px 30px;
+          margin: 10px 0;
+          border: none;
+          border-radius: 0.6rem;
+        }
+        .category h4 {
+          font-size: 16px;
+          text-align: start;
+        }
+        .category p {
+          font-size: 12px;
+          text-align: start;
+        }
+        .category img {
+          width: 60px;
+          border-radius: 20%;
+        }
+        .line {
+          width: 40%;
+          height: 2px;
+          background-color: white;
+          margin: 5px 0;
+        }
+        .chat {
+          position: fixed;
+          bottom: 10px;
+          right: 10px;
+          background-color: palevioletred;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .chat span {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <nav>
+        not required (for now)
+    </nav> -->
+
+    <div class="head">
+      <h3>KAJAA</h3>
+      <img src="https://picsum.photos/200" alt="" />
+    </div>
+
+    <div class="container">
+      <button
+        class="category"
+        style="
+          background: linear-gradient(
+            to right,
+            rgb(45, 5, 52),
+            rgb(128, 27, 148)
+          );
+        "
+      >
+        <div class="button-text">
+          <h4>Rent a 2 wheeler</h4>
+          <div class="line"></div>
+          <p>Superbikes to scooters, we got motorcycles for every need</p>
+        </div>
+        <img src="https://picsum.photos/300" alt="" />
+      </button>
+      <button
+        class="category"
+        style="
+          background: linear-gradient(
+            to right,
+            rgb(147, 73, 8),
+            rgb(225, 166, 39)
+          );
+        "
+      >
+        <div class="button-text">
+          <h4>Rent a 4 wheeler</h4>
+          <div class="line"></div>
+          <p>Self driven cars with unlimited kilometers and free accessories</p>
+        </div>
+        <img src="https://picsum.photos/400" alt="" />
+      </button>
+      <button
+        class="category"
+        style="
+          background: linear-gradient(
+            to right,
+            rgb(33, 96, 6),
+            rgb(24, 179, 37)
+          );
+        "
+      >
+        <div class="button-text">
+          <h4>Read the news</h4>
+          <div class="line"></div>
+          <p>Read the latest news from all over India in short</p>
+        </div>
+        <img src="https://picsum.photos/500" alt="" />
+      </button>
+      <button
+        class="category"
+        style="
+          background: linear-gradient(
+            to right,
+            rgb(8, 49, 92),
+            rgb(60, 119, 230)
+          );
+        "
+      >
+        <div class="button-text">
+          <h4>Explore Northeast India</h4>
+          <div class="line"></div>
+          <p>Tourist attractions, ATMs, Petrol pumps and more</p>
+        </div>
+        <img src="https://picsum.photos/600" alt="" />
+      </button>
+      <button
+        class="category"
+        style="
+          background: linear-gradient(
+            to right,
+            rgb(97, 9, 15),
+            rgb(201, 55, 91)
+          );
+        "
+      >
+        <div class="button-text">
+          <h4>Bookings and Support</h4>
+          <div class="line"></div>
+          <p>
+            Bookings, Profile info, Help and support, Referal bonuses and more
+          </p>
+        </div>
+        <img src="https://picsum.photos/700" alt="" />
+      </button>
+    </div>
+    <div class="chat">
+      <span class="material-icons"> contact_support </span>
+    </div>
+  </body>
+</html>
